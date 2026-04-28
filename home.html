@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Blog</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Explora&family=Jersey+10&family=Jersey+15&family=VT323&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="content-wrapper">
+            
+            <aside id="sidebar">
+                <nav class="box">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">The Vault</a></li>
+                        <li><a href="#">Musicals</a></li>
+                        <li><a href="#">Archive</a></li>
+                    </ul>
+                </nav>
+
+                <div class="box">
+                    <h3>Now Playing</h3>
+                    <div class="cd-player-mini">
+                        <div class="cd-titlebar">
+                            <span>💿 CD PLAYER</span>
+                            <div class="win-btns"><span>_</span><span>X</span></div>
+                        </div>
+                        <div class="cd-content">
+                            <div class="art-box">
+                                <img id="album-art" src="placeholder.png" alt="Album Art">
+                            </div>
+                            <div class="cd-info">
+                                <div class="cd-inset" id="artist-name">Jorge Rivera-Herrans</div>
+                                <div class="cd-inset" id="song-title">ODYSSEUS</div>
+                                <div class="cd-btns">
+                                    <button><<</button><button>PLAY</button><button>STOP</button><button>>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                        <h3>Current Mood</h3>
+                        <div id="status-display">
+                            <div id="mood-icon">👻</div>
+                            <p id="status-text">Summoning spirits...</p>
+                            <small id="status-time"></small>
+                        </div>
+                    </div>
+                </aside>
+
+            <main id="center-column">
+                <header class="box">
+                    <h1>ANNA TRAVASCIO (since 2008)</h1>
+                    <div class="header-gallery">
+                        <img src="nosferatu.jpg" alt="Nosferatu">
+                        <img src="kitty.jpg" alt="Cat">
+                        <img src="castelo.jpg" alt="Gothic Architecture">
+                    </div>
+                    <p class="subtitle">“I would die for her. I would kill for her. Either way, what bliss.” - Gomez Addams</p>
+                </header>
+
+                <article class="post">
+                    <h2>Entry #01: The Beginning</h2>
+                    <span class="date">Oct 13, 2025</span>
+                    <div class="entry-text">
+                        Welcome to my digital lair. I am a competitive programming athlete and a practitioner of classical ballet. This space is a manifestation of my interests in Victorian Gothic literature and complex code.
+                    </div>
+                </article>
+
+                <article class="post">
+                    <h2>Current Projects</h2>
+                    <div class="entry-text">
+                        Currently coordinating the web development for the Sem Parar Project and training for the upcoming informatics olympiads.
+                    </div>
+                </article>
+            </main>
+
+            <aside id="right-sidebar">
+                <div class="box">
+                    <h3>Lurkers</h3>
+                    <div class="counter">0000499</div>
+                </div>
+                
+                <div class="box">
+                    <h3>Friends</h3>
+                    <div class="friend-grid">
+                        <div class="f-slot"></div><div class="f-slot"></div>
+                        <div class="f-slot"></div><div class="f-slot"></div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2008-2026. Best viewed in 1024x768.</p>
+        </footer>
+    </div>
+    <script src="music_tracker.js"></script>
+    <script src="mood_tracker.js"></script>
+</body>
+</html>

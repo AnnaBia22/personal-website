@@ -1,0 +1,191 @@
+/* --- Global Styles --- */
+body {
+    background-color: #000;
+    background-image: url('background.png'); 
+    background-repeat: repeat;
+    color: #ccc;
+    font-family: 'Zen Maru Gothic', sans-serif; /* Run text */
+    font-size: 11px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#container {
+    width: 950px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px double #8B0000;
+    padding: 15px;
+}
+
+/* --- Three Column Grid --- */
+#content-wrapper {
+    display: grid;
+    grid-template-columns: 210px 1fr 160px;
+    gap: 15px;
+    align-items: start;
+}
+
+#sidebar {
+    position: sticky;
+    top: 10px;
+}
+
+/* --- Gothic Box Styling --- */
+.box, .post {
+    background-color: #000;
+    border: 1px solid #8B0000;
+    outline: 1px solid #8B0000;
+    outline-offset: -4px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+/* --- Header Typography --- */
+header h1 {
+    font-family: 'Jersey 15', sans-serif !important;
+    font-size: 30px; /* Slightly smaller reduces pixel block size */
+    color: #8B0000;
+    margin: 0;
+    
+    /* Horizontal Squeezing: This is the best way to make pixel fonts look thinner */
+    display: inline-block;
+    transform: scaleX(0.7); 
+    transform-origin: left; /* Keeps it aligned to the left as per your code */
+    
+    /* Spacing: Prevents the squeezed letters from touching */
+    letter-spacing: 7px; 
+    
+    line-height: 1;
+    
+    /* Optional: Sharpness filter */
+    filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.5));
+}
+
+.subtitle {
+    font-family: 'Explora', serif;
+    font-size: 26px;
+    color: #999;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5px;
+}
+
+/* --- Box Titles --- */
+h2, h3 {
+    background: #8B0000;
+    color: #fff;
+    font-family: 'VT323', monospace; /* Terminal style for titles */
+    font-weight: 400;
+    font-size: 18px; /* Pixel fonts need slightly larger px to be crisp */
+    margin: -12px -12px 10px -12px;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Gallery & Hover --- */
+.header-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.header-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #444;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.header-gallery img:hover {
+    filter: grayscale(0%) sepia(30%); /* Revealed color on hover */
+    border-color: #8B0000;
+}
+
+/* --- CD Player --- */
+.cd-player-mini {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #fff #808080 #808080 #fff;
+    padding: 1px;
+    color: #000;
+}
+
+.cd-titlebar {
+    background: linear-gradient(90deg, #8B0000, #330000);
+    font-family: 'VT323', monospace;
+    color: white;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.cd-inset {
+    background: #fff;
+    color: #000;
+    border: 2px inset #808080;
+    padding: 2px;
+    margin-bottom: 4px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* --- Widgets --- */
+.counter {
+    text-align: center;
+    font-family: 'Jersey 10', sans-serif;
+    color: #FFD700;
+    font-size: 20px;
+    background: #111;
+    border: 1px solid #8B0000;
+}
+
+.friend-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.f-slot { aspect-ratio: 1/1; background: #222; border: 1px solid #444; }
+
+/* Links */
+a { color: #a30000; text-decoration: none; }
+a:hover { background: #8B0000; color: #fff; }
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    border-top: 1px dashed #444;
+}
+
+#mood-icon {
+    margin-top: 15px;
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    filter: drop-shadow(0 0 15px #c10505); /* Red "Aura" */
+}
+
+
+#status-time {
+    display: block;
+    font-size: 8px;
+    color: #444; /* Faded gothic look */
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+#status-text {
+    margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
