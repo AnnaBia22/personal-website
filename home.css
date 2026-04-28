@@ -48,6 +48,14 @@ body {
     outline-offset: -4px;
     padding: 12px;
     margin-bottom: 15px;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transform-origin: center;
+    will-change: transform;
+}
+
+.box, .post.shifting {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
 }
 
 /* --- Header Typography --- */
@@ -214,4 +222,93 @@ button:hover {
     color: #000 !important;
     font-weight: bold;
     box-shadow: 0 0 10px #ff0000;
+}
+/* Container for the avatar to manage the interaction */
+.avatar-interaction-container {
+    position: relative;
+    width: 150px;   /* Explicit Width */
+    height: 180px;  /* Explicit Height */
+    margin: 0 auto;
+    border: 1px solid #8B0000;
+    background: #050505;
+    box-shadow: inset 0 0 50px #000;
+    overflow: hidden; /* This crops the giant image to the box size */
+}
+
+.avatar-img {
+    width: 100%;    /* Forces image to fit the 150px width */
+    height: 100%;   /* Forces image to fit the 180px height */
+    object-fit: cover; /* Ensures your face isn't squished/stretched */
+    filter: grayscale(100%) contrast(120%) sepia(20%);
+    display: block;
+}
+
+/* On hover, trigger the violent but dark glitch */
+.avatar-interaction-container:hover .avatar-img {
+    /* Using steps(1) makes the glitch snap between states violently */
+    animation: sanguine_jumpscare 0.2s steps(1) infinite;
+}
+
+/* Sanguine Glitch: No White, Only Deep Red and Distortion */
+@keyframes sanguine_jumpscare {
+    0% { 
+        filter: grayscale(0%) contrast(300%) brightness(0.7) sepia(100%) saturate(20) hue-rotate(-15deg);
+        transform: translate(2px, -1px) skewX(2deg);
+    }
+    33% { 
+        filter: grayscale(100%) contrast(500%) brightness(0.4); 
+        transform: translate(-3px, 2px) scale(1.03);
+    }
+    66% { 
+        filter: grayscale(0%) contrast(300%) brightness(0.7) sepia(100%) saturate(20) hue-rotate(15deg);
+        transform: translate(1px, -2px) skewX(-2deg);
+    }
+    100% { 
+        /* Back to normal-ish to create the flicker loop */
+        filter: grayscale(100%) contrast(120%) sepia(20%);
+        transform: translate(0, 0) scale(1);
+    }
+}
+.eye-socket {
+    position: absolute;
+    width:2px;  /* Small boundary */
+    height: 0.005px;  /* Narrower height to keep it inside the glasses frames */
+    pointer-events: none;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pupil {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    /* New Color: Sanguine Ember */
+    background: #ffffff65; 
+    border-radius: 50%;
+    /* Subtle glow that doesn't overwhelm the iris */
+    box-shadow: 0 0 4px #ff0000, 0 0 8px #4a0000;
+    transition: transform 0.05s linear;
+    opacity: 0.9;
+}
+
+/* Hover state: The eyes don't just get bright, they get intense */
+.avatar-interaction-container:hover .pupil {
+    background: #cfcfcf00;
+    box-shadow: 0 0 10px #ff0000;
+}
+#ghost-entity {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    color: #8B0000;
+    z-index: 10000;
+    text-shadow: 0 0 8px #ff0000;
+    opacity: 0; /* Hidden until it starts hunting */
+    will-change: transform;
+    white-space: nowrap;
 }

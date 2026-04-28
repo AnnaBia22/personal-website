@@ -13,20 +13,33 @@
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
-
+<div id="vignette"></div>
     <div id="container">
         <div id="content-wrapper">
             
             <aside id="sidebar">
-                <nav class="box">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">The Vault</a></li>
-                        <li><a href="#">Musicals</a></li>
-                        <li><a href="#">Archive</a></li>
-                    </ul>
-                </nav>
+                <aside id="sidebar">
+    <div class="box" style="text-align: center; overflow: hidden;">
+        <h3>Entity: Anna</h3>
+        
+        <div class="avatar-interaction-container" id="avatar-box">
+    <img src="avatar.png" alt="Anna" class="avatar-img">
+
+    <div class="eye-socket" style="top: 27%; left: 42%;">
+        <div class="pupil"></div>
+    </div>
+    <div class="eye-socket" style="top: 26%; left: 54%;">
+        <div class="pupil"></div>
+    </div>
+
+    <div class="scanlines"></div>
+</div>
+
+        <div style="font-family: 'VT323'; font-size: 11px; color: #8B0000; margin-top: 5px;">
+            STATUS: INDEPENDENT_SCHOLAR
+        </div>
+    </div>
+</aside>
 
                 <div class="box">
                     <h3>Now Playing</h3>
@@ -244,5 +257,99 @@ function summon() {
     <script src="almanac.js"></script>
     <script src="music_tracker.js"></script>
     <script src="mood_tracker.js"></script>
+    <div id="ghost-entity">█▓▒░</div>
+
+<script>
+  const ghost = document.getElementById('ghost-entity');
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+let ghostX = 0;
+let ghostY = 0;
+let isHunting = false;
+
+// Function to spawn the ghost off-screen
+function spawnGhost() {
+    const side = Math.floor(Math.random() * 3); // 0: Left, 1: Right, 2: Bottom
+    if (side === 0) { // Left
+        ghostX = -100;
+        ghostY = Math.random() * window.innerHeight;
+    } else if (side === 1) { // Right
+        ghostX = window.innerWidth + 100;
+        ghostY = Math.random() * window.innerHeight;
+    } else { // Bottom
+        ghostX = Math.random() * window.innerWidth;
+        ghostY = window.innerHeight + 100;
+    }
+    ghost.style.opacity = "0.8";
+    isHunting = true;
+}
+
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!isHunting) spawnGhost();
+});
+
+function hunt() {
+    
+    const dx = mouseX - ghostX;
+    const dy = mouseY - ghostY;
+    const distance = Math.hypot(dx, dy);
+
+    // STOPPING DISTANCE: The ghost will stay 40px away from your cursor
+    const stopDist = 80; 
+    const snap = 0.12;
+
+    if (distance > stopDist) {
+        // Move toward the cursor, but stop before hitting it
+        ghostX += dx * snap;
+        ghostY += dy * snap;
+    } else {
+        // If it's too close, it just jitters in place, watching you
+        ghostX += (Math.random() - 0.5) * 2;
+        ghostY += (Math.random() - 0.5) * 2;
+    }
+
+    // SCARY JITTER: Gets violent when it's "at the gate" (near the stopDist)
+    const jitter = distance < 60 ? (Math.random() - 0.5) * 15 : (Math.random() - 0.5) * 2;
+
+    // Content Glitch
+    if (Math.random() > 0.99) {
+        ghost.innerText = "run"; // Personal touch
+    } else {
+        ghost.innerText = "";
+    }
+
+    // Apply the transform with the stopDist logic
+    ghost.style.transform = `translate(${ghostX + jitter}px, ${ghostY + jitter}px) rotate(${(mouseX - ghostX) * 0.1}deg)`;
+
+    requestAnimationFrame(hunt);
+}
+
+hunt();
+
+const avatarBox = document.getElementById('avatar-box');
+const pupils = document.querySelectorAll('.pupil');
+
+
+document.addEventListener('mousemove', (e) => {
+    pupils.forEach(pupil => {
+        const rect = pupil.parentElement.getBoundingClientRect();
+        const eyeX = rect.left + rect.width / 2;
+        const eyeY = rect.top + rect.height / 2;
+
+        const angle = Math.atan2(e.clientY - eyeY, e.clientX - eyeX);
+        
+        // LIMITS: Lower these values if they still escape
+        const distX = 3; // Horizontal range
+        const distY = 0.8; // Vertical range (stricter)
+
+        const x = Math.cos(angle) * distX;
+        const y = Math.sin(angle) * distY;
+
+        pupil.style.transform = `translate(${x}px, ${y}px)`;
+    });
+});
+</script>
 </body>
 </html>
