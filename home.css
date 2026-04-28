@@ -198,3 +198,20 @@ footer {
     text-transform: uppercase;
     font-size: 12px;
 }
+@keyframes pulse {
+    0% { opacity: 1; text-shadow: 0 0 5px #0f0; }
+    50% { opacity: 0.3; text-shadow: 0 0 0px #0f0; }
+    100% { opacity: 1; text-shadow: 0 0 5px #0f0; }
+}
+input:focus {
+    border-color: #8B0000 !important;
+    box-shadow: 0 0 5px #8B0000;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8B0000 !important;
+    color: #000 !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff0000;
+}
