@@ -11,23 +11,32 @@ body {
 }
 
 #container {
-    width: 950px;
+    width: 1500px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.9);
-    border: 3px double #8B0000;
     padding: 15px;
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr 210px; /* Posts | Right Sidebar */
+    gap: 15px;
+    padding: 15px;
+    border: 3px double #8B0000; /* The "separation" border you wanted */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* --- Three Column Grid --- */
 #content-wrapper {
     display: grid;
-    grid-template-columns: 210px 1fr 160px;
-    gap: 15px;
+    grid-template-columns: 210px 1fr; /* Sidebar | Everything else */
+    gap: 20px;
     align-items: start;
 }
 
 #sidebar {
     position: sticky;
+    border: 3px double #8B0000;
     top: 10px;
 }
 

@@ -19,7 +19,7 @@ const MOOD_LIBRARY = {
     "melancholic": "<img src='melancolic.gif' class='mood-img'>", 
     "mysterious": "🦇", // Bat
     "dreamy": "<img src='dreamy.gif' class='mood-img'>",
-    "lonely": "🏰",     // Isolated Castle
+    "lonely": "<img src='lonely.gif' class='mood-img'>",
     "inspired": "🖋️",    // The Poet's Pen
 
     "default": "<img src='default.gif' class='mood-img'>"
@@ -71,6 +71,7 @@ async function updateSpookyMood() {
         console.error("Connection to the digital lair failed:", e);
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     updateSpookyMood();
