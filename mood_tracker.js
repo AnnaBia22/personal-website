@@ -10,14 +10,14 @@ const MOOD_LIBRARY = {
 
     "musical": "<img src='musical.gif' class='mood-img'>",
     "reading": "<img src='reader.gif' class='mood-img'>",
-    "coding": "📟",     // Cursed Terminal
-    "studying": "📖",   // Grimoire
+    "coding": "<img src='coding.gif' class='mood-img'>",
+    "studying": "<img src='studying.gif' class='mood-img'>",
     "dancing": "🩰",    // Haunted Ballet Slippers
     "training": "<img src='training.gif' class='mood-img'>",
 
     // Gothic Vibes
     "melancholic": "<img src='melancolic.gif' class='mood-img'>", 
-    "mysterious": "🦇", // Bat
+    "mysterious": "<img src='msterious.gif' class='mood-img'>",
     "dreamy": "<img src='dreamy.gif' class='mood-img'>",
     "lonely": "<img src='lonely.gif' class='mood-img'>",
     "inspired": "🖋️",    // The Poet's Pen
