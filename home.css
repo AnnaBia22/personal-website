@@ -312,3 +312,74 @@ button:hover {
     will-change: transform;
     white-space: nowrap;
 }
+
+/* Container for the Victorian Specimen */
+.specimen-box {
+    background-color: #f4f1ea !important; /* Aged paper color */
+    color: #2c2c2c !important;
+    border: 1px solid #3d3d3d;
+    position: relative;
+    overflow: hidden;
+    padding: 15px; /* Added padding for breathing room */
+}
+
+/* The frame around your etching */
+.etching-frame {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px double #8B0000;
+    margin-bottom: 10px;
+}
+
+/* Consolidated Image Styling - "Lead Dev" Optimized */
+#flower-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    mix-blend-mode: multiply; 
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for the day swap */
+}
+
+/* Victorian Typography */
+.explora-font {
+    font-family: 'Explora', serif;
+    font-size: 28px;
+    margin: 0;
+    color: #8B0000;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Matching the <span> injected by your JS */
+.latin-subtitle {
+    font-family: 'Zen Maru Gothic', sans-serif; /* Your choice from the snippets */
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    letter-spacing: 1px;
+}
+
+.meaning-text {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    padding: 10px 5px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* The 'Cyberdeck' style footer */
+.catalog-footer {
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+}
