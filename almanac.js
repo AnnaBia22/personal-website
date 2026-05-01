@@ -93,29 +93,29 @@ const flowerCollection = [
     { name: "Dahlia", latin: "Dahlia pinnata", meaning: "“Dignity and elegance.”" },//done
     { name: "Dandelion", latin: "Taraxacum officinale", meaning: "“The oracle of time and desire.”" },//done
     { name: "Eglantine", latin: "Rosa rubiginosa", meaning: "“Poetry; I wound to heal.”" },//done
-    { name: "Elderberry", latin: "Sambucus nigra", meaning: "“Compassion and zeal.”" },
-    { name: "Fern", latin: "Polypodiopsida", meaning: "“Sincerity and fascination.”" },
-    { name: "Forget-Me-Not", latin: "Myosotis sylvatica", meaning: "“True love and memories.”" },
-    { name: "Foxglove", latin: "Digitalis purpurea", meaning: "“Insincerity and riddles.”" },
-    { name: "Fritillary", latin: "Fritillaria meleagris", meaning: "“Majesty and pensive pride.”" },
-    { name: "Geranium", latin: "Pelargonium", meaning: "“Gentility and steadfastness.”" },
-    { name: "Gloxinia", latin: "Gloxinia speciosa", meaning: "“Love at first sight.”" },
-    { name: "Hawthorn", latin: "Crataegus monogyna", meaning: "“Hope and protection.”" },
-    { name: "Heather", latin: "Calluna vulgaris", meaning: "“Loneliness and protection.”" },
-    { name: "Hibiscus", latin: "Hibiscus rosa-sinensis", meaning: "“Delicate and fleeting beauty.”" },
-    { name: "Hydrangea", latin: "Hydrangea macrophylla", meaning: "“A heartless boast.”" },
-    { name: "Iris", latin: "Iris germanica", meaning: "“Message and wisdom.”" },
-    { name: "Ivy", latin: "Hedera helix", meaning: "“Fidelity and eternal friendship.”" },
-    { name: "Jasmine", latin: "Jasminum officinale", meaning: "“Grace and elegance.”" },
-    { name: "Kalmia", latin: "Kalmia latifolia", meaning: "“Ambition and perseverance.”" },
-    { name: "Laburnum", latin: "Laburnum anagyroides", meaning: "“Pensive beauty and forsaken.”" },
-    { name: "Lavender", latin: "Lavandula angustifolia", meaning: "“Distrust and suspicion.”" },
-    { name: "Lily of the Valley", latin: "Convallaria majalis", meaning: "“The return of happiness.”" },
-    { name: "Lotus", latin: "Nelumbo nucifera", meaning: "“Eloquence and purity.”" },
-    { name: "Magnolia", latin: "Magnolia grandiflora", meaning: "“Love of nature; dignity.”" },
-    { name: "Mistletoe", latin: "Viscum album", meaning: "“I surmount all obstacles.”" },
-    { name: "Moss", latin: "Bryophyta", meaning: "“Maternal love and ennui.”" },
-    { name: "Narcissus", latin: "Narcissus", meaning: "“Egotism and self-esteem.”" },
+    { name: "Elderberry", latin: "Sambucus nigra", meaning: "“Compassion and zeal.”" },//done
+    { name: "Fern", latin: "Polypodiopsida", meaning: "“Sincerity and fascination.”" },//done
+    { name: "Forget-Me-Not", latin: "Myosotis sylvatica", meaning: "“True love and memories.”" },//done
+    { name: "Foxglove", latin: "Digitalis purpurea", meaning: "“Insincerity and riddles.”" },//done
+    { name: "Fritillary", latin: "Fritillaria meleagris", meaning: "“Majesty and pensive pride.”" },//done
+    { name: "Geranium", latin: "Pelargonium", meaning: "“Gentility and steadfastness.”" },//done
+    { name: "Gloxinia", latin: "Gloxinia speciosa", meaning: "“Love at first sight.”" },//done
+    { name: "Hawthorn", latin: "Crataegus monogyna", meaning: "“Hope and protection.”" },//done
+    { name: "Heather", latin: "Calluna vulgaris", meaning: "“Loneliness and protection.”" },//-------------------------------------------------
+    { name: "Hibiscus", latin: "Hibiscus rosa-sinensis", meaning: "“Delicate and fleeting beauty.”" },//-------------------------------------------------
+    { name: "Hydrangea", latin: "Hydrangea macrophylla", meaning: "“A heartless boast.”" },//-------------------------------------------------
+    { name: "Iris", latin: "Iris germanica", meaning: "“Message and wisdom.”" },//done
+    { name: "Ivy", latin: "Hedera helix", meaning: "“Fidelity and eternal friendship.”" },//done
+    { name: "Jasmine", latin: "Jasminum officinale", meaning: "“Grace and elegance.”" },//done
+    { name: "Kalmia", latin: "Kalmia latifolia", meaning: "“Ambition and perseverance.”" },//done
+    { name: "Laburnum", latin: "Laburnum anagyroides", meaning: "“Pensive beauty and forsaken.”" },//done
+    { name: "Lavender", latin: "Lavandula angustifolia", meaning: "“Distrust and suspicion.”" },//done
+    { name: "Lily of the Valley", latin: "Convallaria majalis", meaning: "“The return of happiness.”" },//done
+    { name: "Lotus", latin: "Nelumbo nucifera", meaning: "“Eloquence and purity.”" },//done
+    { name: "Magnolia", latin: "Magnolia grandiflora", meaning: "“Love of nature; dignity.”" },//done
+    { name: "Mistletoe", latin: "Viscum album", meaning: "“I surmount all obstacles.”" },//------------------------------------------------
+    { name: "Moss", latin: "Bryophyta", meaning: "“Maternal love and ennui.”" },//-------------------------------------------------
+    { name: "Narcissus", latin: "Narcissus", meaning: "“Egotism and self-esteem.”" },//done
     { name: "Oleander", latin: "Nerium oleander", meaning: "“Beware; complex beauty.”" },
     { name: "Orange Blossom", latin: "Citrus sinensis", meaning: "“Eternal purity.”" },
     { name: "Orchid", latin: "Orchidaceae", meaning: "“Refinement and luxury.”" },
