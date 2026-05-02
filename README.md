@@ -30,6 +30,16 @@ Active projects and leadership roles:
 A direct communication portal that processes user messages and formats them for transmission via encrypted signal (Gmail), ensuring correspondence fits the terminal aesthetic.
 
 ---
+## 🤖 AI COLLABORATION DISCLOSURE
+This digital grimoire was engineered through a hybrid collaboration between the Lead Developer and Artificial Intelligence:
+
+System Architecture: AI was utilized to refine the logic for the Almanac’s astronomical calculations and botanical rotation systems.
+
+Documentation & Content: The project’s README and technical summaries were co-authored with AI to ensure professional alignment with international scholarship standards.
+
+Visual Engineering: AI assisted in optimizing CSS filters and mix-blend-mode configurations to achieve the specific "ink-on-paper" Gothic terminal aesthetic.
+
+Refinement: Continuous iterative testing and code reviews were performed via AI to maintain a lean, framework-free (Vanilla JS) codebase.
 
 ## 📝 LICENSE
 This project is licensed under the **MIT LICENSE** (2026).
