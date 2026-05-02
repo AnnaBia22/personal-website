@@ -12,7 +12,7 @@ const MOOD_LIBRARY = {
     "reading": "<img src='reader.gif' class='mood-img'>",
     "coding": "<img src='coding.gif' class='mood-img'>",
     "studying": "<img src='studying.gif' class='mood-img'>",
-    "dancing": "🩰",    // Haunted Ballet Slippers
+    "dancing": "<img src='dancing.gif' class='mood-img'>",
     "training": "<img src='training.gif' class='mood-img'>",
 
     // Gothic Vibes
@@ -20,7 +20,7 @@ const MOOD_LIBRARY = {
     "mysterious": "<img src='msterious.gif' class='mood-img'>",
     "dreamy": "<img src='dreamy.gif' class='mood-img'>",
     "lonely": "<img src='lonely.gif' class='mood-img'>",
-    "inspired": "🖋️",    // The Poet's Pen
+    "inspired": "<img src='inspired.gif' class='mood-img'>",    
 
     "default": "<img src='default.gif' class='mood-img'>"
 };
