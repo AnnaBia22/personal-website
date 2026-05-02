@@ -58,35 +58,35 @@ const flowerCollection = [
     // --- THE GOTHIC & SCHOLARLY SET ---
     { name: "Monkshood", latin: "Aconitum napellus", meaning: "“Caution; a deadly foe is near.”" }, //done
     { name: "Asphodel", latin: "Asphodelus ramosus", meaning: "“My regrets follow you to the grave.”" },//done
-    { name: "Black Rose", latin: "Rosa nigra", meaning: "“Death and rebirth; total transformation.”" },//-------------------------------------------------
+    { name: "Hyacinth", latin: "Hyacinthus comosus", meaning: "“I am sorry; please forgive me; sorrow.”" },//done
     { name: "Pansy", latin: "Viola tricolor", meaning: "“You occupy my thoughts and studies.”" },//done
     { name: "Wormwood", latin: "Artemisia absinthium", meaning: "“Absence and bitter sorrow.”" },//done
     { name: "Hellebore", latin: "Helleborus niger", meaning: "“Scandal and anxiety.”" },//done
     { name: "Nightshade", latin: "Atropa belladonna", meaning: "“Silence and deception.”" },//done
     { name: "Cypress", latin: "Cupressus sempervirens", meaning: "“Mourning and despair.”" },//done
-    { name: "Lichen", latin: "Parmelia sulcata", meaning: "“Solitude and dejection.”" },//--------------------------------------------------
+    { name: "Lichen", latin: "Parmelia sulcata", meaning: "“Solitude and dejection.”" },//done
     { name: "Deadly Hemlock", latin: "Conium maculatum", meaning: "“You will be my death.”" },//done
 
     // --- THE COMPETITIVE & STRENGTH SET ---
     { name: "Gladiolus", latin: "Gladiolus palustris", meaning: "“Strength of character and integrity.”" },//done
-    { name: "Amaryllis", latin: "Hippeastrum", meaning: "“Splendid pride and achievement.”" },//-------------------------------------------------
+    { name: "Amaryllis", latin: "Hippeastrum", meaning: "“Splendid pride and achievement.”" },//done
     { name: "Nasturtium", latin: "Tropaeolum majus", meaning: "“Victory in battle.”" },//done
     { name: "Oak Leaf", latin: "Quercus robur", meaning: "“Bravery and long-standing power.”" },//done
     { name: "Thistle", latin: "Onopordum acanthium", meaning: "“Defiance and retaliation.”" },//done
     { name: "Borage", latin: "Borago officinalis", meaning: "“Bluntness and courage.”" },//done
-    { name: "Protea", latin: "Protea cynaroides", meaning: "“Transformation and diversity.”" },//-------------------------------------------------
+    { name: "Protea", latin: "Protea cynaroides", meaning: "“Transformation and diversity.”" },//done
     { name: "Fennel", latin: "Foeniculum vulgare", meaning: "“Force and strength.”" },//done
-    { name: "Palm", latin: "Arecaceae", meaning: "“Victory and success.”" },//-------------------------------------------------
-    { name: "Edelweiss", latin: "Leontopodium nivale", meaning: "“Nobility and daring.”" },//-------------------------------------------------
+    { name: "Bay Laurel", latin: "Laurus nobilis", meaning: "“Victory, merit, and honor; the reward of the scholar.”" },//done
+    { name: "Edelweiss", latin: "Leontopodium nivale", meaning: "“Nobility and daring.”" },//done
 
     // --- THE BOTANICAL CABINET (A-Z) ---
-    { name: "Aloe", latin: "Aloe vera", meaning: "“Grief and religious superstition.”" },//-------------------------------------------------
+    { name: "Aloe", latin: "Aloe vera", meaning: "“Grief and religious superstition.”" },//done
     { name: "Anemone", latin: "Anemone nemorosa", meaning: "“Forsaken and fading hope.”" },//done
     { name: "Basil", latin: "Ocimum basilicum", meaning: "“Hatred and suspicion.”" },//done
     { name: "Burdock", latin: "Arctium lappa", meaning: "“Importunity; do not touch me.”" },//done
     { name: "Buttercup", latin: "Ranunculus acris", meaning: "“Ingratitude and childishness.”" },//done
     { name: "Camellia", latin: "Camellia japonica", meaning: "“Unpretending excellence.”" },//done
-    { name: "Cinquefoil", latin: "Potentilla", meaning: "“Beloved daughter; solitude.”" },//-------------------------------------------------
+    { name: "Cinquefoil", latin: "Potentilla", meaning: "“Beloved daughter; solitude.”" },//done
     { name: "Clematis", latin: "Clematis viticella", meaning: "“Mental beauty and artifice.”" },//done
     { name: "Clover", latin: "Trifolium repens", meaning: "“Be mine; a promise of luck.”" },//done
     { name: "Coltsfoot", latin: "Tussilago farfara", meaning: "“Justice shall be done.”" },//done
@@ -101,9 +101,9 @@ const flowerCollection = [
     { name: "Geranium", latin: "Pelargonium", meaning: "“Gentility and steadfastness.”" },//done
     { name: "Gloxinia", latin: "Gloxinia speciosa", meaning: "“Love at first sight.”" },//done
     { name: "Hawthorn", latin: "Crataegus monogyna", meaning: "“Hope and protection.”" },//done
-    { name: "Heather", latin: "Calluna vulgaris", meaning: "“Loneliness and protection.”" },//-------------------------------------------------
-    { name: "Hibiscus", latin: "Hibiscus rosa-sinensis", meaning: "“Delicate and fleeting beauty.”" },//-------------------------------------------------
-    { name: "Hydrangea", latin: "Hydrangea macrophylla", meaning: "“A heartless boast.”" },//-------------------------------------------------
+    { name: "Heather", latin: "Calluna vulgaris", meaning: "“Loneliness and protection.”" },//done
+    { name: "Hibiscus", latin: "Hibiscus rosa-sinensis", meaning: "“Delicate and fleeting beauty.”" },//done
+    { name: "Hydrangea", latin: "Hydrangea macrophylla", meaning: "“A heartless boast.”" },//done
     { name: "Iris", latin: "Iris germanica", meaning: "“Message and wisdom.”" },//done
     { name: "Ivy", latin: "Hedera helix", meaning: "“Fidelity and eternal friendship.”" },//done
     { name: "Jasmine", latin: "Jasminum officinale", meaning: "“Grace and elegance.”" },//done
@@ -113,26 +113,26 @@ const flowerCollection = [
     { name: "Lily of the Valley", latin: "Convallaria majalis", meaning: "“The return of happiness.”" },//done
     { name: "Lotus", latin: "Nelumbo nucifera", meaning: "“Eloquence and purity.”" },//done
     { name: "Magnolia", latin: "Magnolia grandiflora", meaning: "“Love of nature; dignity.”" },//done
-    { name: "Mistletoe", latin: "Viscum album", meaning: "“I surmount all obstacles.”" },//------------------------------------------------
-    { name: "Moss", latin: "Bryophyta", meaning: "“Maternal love and ennui.”" },//-------------------------------------------------
+    { name: "Mistletoe", latin: "Viscum album", meaning: "“I surmount all obstacles.”" },//done
+    { name: "Sunflower", latin: "Helianthus annuus", meaning: "“Adoration, loyalty, and haughtiness; ambition reaching for the light.”" },//done
     { name: "Narcissus", latin: "Narcissus", meaning: "“Egotism and self-esteem.”" },//done
-    { name: "Oleander", latin: "Nerium oleander", meaning: "“Beware; complex beauty.”" },
-    { name: "Orange Blossom", latin: "Citrus sinensis", meaning: "“Eternal purity.”" },
-    { name: "Orchid", latin: "Orchidaceae", meaning: "“Refinement and luxury.”" },
-    { name: "Peony", latin: "Paeonia officinalis", meaning: "“Bashfulness and shame.”" },
-    { name: "Periwinkle", latin: "Vinca minor", meaning: "“Tender recollections.”" },
-    { name: "Petunia", latin: "Petunia hybrida", meaning: "“Your presence soothes me.”" },
-    { name: "Poppy", latin: "Papaver somniferum", meaning: "“Eternal sleep and oblivion.”" },
-    { name: "Quince", latin: "Cydonia oblonga", meaning: "“Temptation and choice.”" },
-    { name: "Rue", latin: "Ruta graveolens", meaning: "“Disdain and regret.”" },
-    { name: "Sage", latin: "Salvia officinalis", meaning: "“Domestic virtue and esteem.”" },
-    { name: "Snapdragon", latin: "Antirrhinum majus", meaning: "“Deception and graciousness.”" },
-    { name: "Stock", latin: "Matthiola incana", meaning: "“Lasting beauty.”" },
-    { name: "Sun-Dew", latin: "Drosera", meaning: "“Surprise; I will catch you.”" },
-    { name: "Tansy", latin: "Tanacetum vulgare", meaning: "“I declare war against you.”" },
-    { name: "Valerian", latin: "Valeriana officinalis", meaning: "“An accommodating disposition.”" },
-    { name: "Yarrow", latin: "Achillea millefolium", meaning: "“Healing and war.”" },
-    { name: "Zinnia", latin: "Zinnia elegans", meaning: "“Thoughts of absent friends.”" }
+    { name: "Oleander", latin: "Nerium oleander", meaning: "“Beware; complex beauty.”" },//done
+    { name: "Orange Blossom", latin: "Citrus sinensis", meaning: "“Eternal purity.”" },//done
+    { name: "Orchid", latin: "Orchidaceae", meaning: "“Refinement and luxury.”" },//done
+    { name: "Peony", latin: "Paeonia officinalis", meaning: "“Bashfulness and shame.”" },//done
+    { name: "Periwinkle", latin: "Vinca minor", meaning: "“Tender recollections.”" },//done
+    { name: "Petunia", latin: "Petunia hybrida", meaning: "“Your presence soothes me.”" },//done
+    { name: "Poppy", latin: "Papaver somniferum", meaning: "“Eternal sleep and oblivion.”" },//done
+    { name: "Quince", latin: "Cydonia oblonga", meaning: "“Temptation and choice.”" },//done
+    { name: "Rue", latin: "Ruta graveolens", meaning: "“Disdain and regret.”" },//done
+    { name: "Sage", latin: "Salvia officinalis", meaning: "“Domestic virtue and esteem.”" },//done
+    { name: "Snapdragon", latin: "Antirrhinum majus", meaning: "“Deception and graciousness.”" },//done
+    { name: "Stock", latin: "Matthiola incana", meaning: "“Lasting beauty.”" },//done
+    { name: "Sun-Dew", latin: "Drosera", meaning: "“Surprise; I will catch you.”" },//done
+    { name: "Tansy", latin: "Tanacetum vulgare", meaning: "“I declare war against you.”" },//done
+    { name: "Valerian", latin: "Valeriana officinalis", meaning: "“An accommodating disposition.”" },//done
+    { name: "Yarrow", latin: "Achillea millefolium", meaning: "“Healing and war.”" },//done
+    { name: "Zinnia", latin: "Zinnia elegans", meaning: "“Thoughts of absent friends.”" }//done 
 ];
 
 // Ensure this runs AFTER the DOM is loaded
